@@ -126,7 +126,7 @@ def evaluate(args: RslRlPPOTrackingConfig):
     # Reset environment
     obs = env_wrapper.get_observations()
 
-    print(f"Starting evaluation for 1000000 steps...")
+    print("Starting evaluation for 1000000 steps...")
     for i in range(1000000):
         actions = policy(obs)
         obs, _, _, _ = env_wrapper.step(actions)

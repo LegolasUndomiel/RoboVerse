@@ -67,9 +67,7 @@ def align_timestamps(
         local_idxs = local_idxs[: len(target_global_idxs)]
 
     if len(global_idxs) == 0:
-        import pdb
-
-        pdb.set_trace()
+        raise ValueError("No valid global indices found. Check timestamps and target_global_idxs.")
 
     for i in range(len(target_global_idxs) - len(global_idxs)):
         # if missing, repeat

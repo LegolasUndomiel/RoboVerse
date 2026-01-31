@@ -153,7 +153,7 @@ def evaluate(args: RslRlPPOConfig):
     env.reset()
     obs, _, _, _, _ = env.step(torch.zeros(env.num_envs, env.num_actions, device=device))
     obs = wrapped_env.get_observations()
-    print(f"Starting evaluation for 1000000 steps...")
+    print("Starting evaluation for 1000000 steps...")
 
     t0 = time.time()
     for i in range(1000000):

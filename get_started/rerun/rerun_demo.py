@@ -18,6 +18,7 @@ Usage:
 
 from __future__ import annotations
 
+import time
 from typing import Literal
 
 try:
@@ -394,7 +395,7 @@ def main():
         log.info("\nPress Ctrl+C to exit...")
         try:
             while True:
-                pass
+                time.sleep(0.1)
         except KeyboardInterrupt:
             log.info("\nShutting down...")
 

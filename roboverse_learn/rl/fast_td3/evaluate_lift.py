@@ -461,7 +461,7 @@ def main():
     )
     amp_dtype = torch.bfloat16 if config.get("amp_dtype") == "bf16" else torch.float16
 
-    log.info(f"Starting lift trajectory collection...")
+    log.info("Starting lift trajectory collection...")
     log.info(f"  - Target count: {args.target_count}")
     log.info(f"  - Lift stable frames: {args.lift_stable_frames}")
     log.info(f"  - Trajectory dir: {args.traj_dir}")

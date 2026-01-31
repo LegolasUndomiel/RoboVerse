@@ -431,7 +431,7 @@ def main():
         print("Warning: CUDA not available, switching to CPU")
         args.device = "cpu"
 
-    print(f"SmolVLA Evaluation")
+    print("SmolVLA Evaluation")
     print(f"  Task: {args.task}")
     print(f"  Robot: {args.robot}")
     print(f"  Simulator: {args.sim}")

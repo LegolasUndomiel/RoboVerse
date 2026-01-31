@@ -311,7 +311,7 @@ def main() -> bool:
         print("CUDA not available, falling back to CPU")
         args.device = "cpu"
 
-    print(f"Pi Evaluation")
+    print("Pi Evaluation")
     print(f"  Task: {args.task}")
     print(f"  Robot: {args.robot}")
     print(f"  Simulator: {args.sim}")

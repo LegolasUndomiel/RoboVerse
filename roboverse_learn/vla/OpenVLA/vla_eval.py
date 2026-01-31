@@ -350,7 +350,7 @@ def main():
         print("CUDA not available, switching to CPU")
         args.device = "cpu"
 
-    print(f"OpenVLA Evaluation")
+    print("OpenVLA Evaluation")
     print(f"  Task: {args.task}")
     print(f"  Robot: {args.robot}")
     print(f"  Simulator: {args.sim}")
