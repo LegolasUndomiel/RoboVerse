@@ -314,7 +314,7 @@ class LidarPointCloud(BaseQueryType):
                                 break
                         if subpath is not None:
                             break
-                if subpath is not None and len(subpath) > 0:
+                if subpath:
                     resolved_link = subpath
             if resolved_link is None:
                 # heuristics for a reasonable base link name
