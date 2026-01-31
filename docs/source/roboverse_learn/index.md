@@ -27,29 +27,6 @@ Train policies through trial and error with PPO, TD3, SAC, and specialized algor
 
 ---
 
-## Algorithm Comparison
-
-### Imitation Learning
-
-| Algorithm | Input | Architecture | Best For |
-|-----------|-------|--------------|----------|
-| [Diffusion Policy](imitation_learning/diffusion_policy.md) | Image/State | DiT, UNet | Multi-modal actions |
-| [ACT](imitation_learning/ACT.md) | Image/State | Transformer | Bimanual tasks |
-| [OpenVLA](imitation_learning/openvla.md) | Image+Language | VLM | Language-conditioned |
-| [SmolVLA](imitation_learning/smolvla.md) | Image+Language | Compact VLM | Edge deployment |
-| [RDT](imitation_learning/rdt.md) | Image/State | Transformer | Dexterous manipulation |
-| [Octo](imitation_learning/octo.md) | Image | Transformer | Cross-embodiment |
-
-### Reinforcement Learning
-
-| Algorithm | Type | GPU Parallel | Best For |
-|-----------|------|--------------|----------|
-| [PPO](reinforcement_learning/ppo.md) | On-policy | Yes | Stable training |
-| [FastTD3](reinforcement_learning/fast_td3.md) | Off-policy | Yes | Sample efficiency |
-| [SAC](reinforcement_learning/sac.md) | Off-policy | Yes | Continuous control |
-| [TD3](reinforcement_learning/td3.md) | Off-policy | Yes | Deterministic policy |
-| [SkillBlender](reinforcement_learning/skillblender_rl.md) | Hierarchical | Yes | Complex skills |
-
 ---
 
 ## Quick Start

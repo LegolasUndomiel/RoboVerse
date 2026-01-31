@@ -8,36 +8,15 @@ This page answers common questions about RoboVerse. For simulator-specific issue
 
 ### What is RoboVerse?
 
-RoboVerse is a unified platform for scalable and generalizable robot learning. It provides:
-
-- A multi-simulator abstraction layer (MetaSim) supporting 11+ physics engines
-- A large-scale dataset with 200+ tasks and 50+ robot embodiments
-- Integrated learning algorithms for imitation learning and reinforcement learning
+RoboVerse is a unified platform for scalable and generalizable robot learning. See the [project page](https://roboverseorg.github.io) and [paper](https://arxiv.org/abs/2504.18904) for details.
 
 ### What simulators are supported?
 
-| Simulator | GPU Parallel | Rendering | Best For |
-|-----------|--------------|-----------|----------|
-| MuJoCo | Via MJX | Native | Fast prototyping, RL |
-| Isaac Sim | Native | RTX | High-fidelity visuals, sim2real |
-| SAPIEN 3 | Native | Ray Tracing | Manipulation tasks |
-| PyBullet | - | OpenGL | Debugging, education |
-| Genesis | Native | Native | Large-scale training |
-| MJX | Native | - | Massively parallel RL |
-
-See the full [Support Matrix](../metasim/features/support_matrix.rst) for details.
+See the [Support Matrix](../metasim/features/support_matrix.rst) for the full list of supported simulators and features.
 
 ### What robots are available?
 
-RoboVerse includes 50+ robot configurations across categories:
-
-- **Manipulators**: Franka Panda, UR5/UR10, Kinova, xArm, Realman, Flexiv, etc.
-- **Mobile Manipulators**: Fetch, Tiago, Stretch
-- **Humanoids**: Unitree H1/G1, Fourier GR1, Digit
-- **Dexterous Hands**: Allegro, Shadow, LEAP Hand
-- **Quadrupeds**: Unitree Go1/A1, ANYmal
-
-See [Robots Dataset](../dataset_benchmark/dataset/robots.md) for the complete list.
+See [Robots Dataset](../dataset_benchmark/dataset/robots.md) for the complete list of available robots.
 
 ---
 

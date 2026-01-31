@@ -1,45 +1,6 @@
 # Dataset and Benchmark
 
-RoboVerse provides a large-scale dataset and standardized benchmarks for robot learning research. This section documents our task suite, asset library, and evaluation protocols.
-
----
-
-## Overview
-
-::::{grid} 3
-:gutter: 3
-
-:::{grid-item-card} 200+ Tasks
-:text-align: center
-
-Manipulation, locomotion, and navigation tasks across difficulty levels
-:::
-
-:::{grid-item-card} 50+ Robots
-:text-align: center
-
-Manipulators, mobile robots, humanoids, and dexterous hands
-:::
-
-:::{grid-item-card} 1000+ Objects
-:text-align: center
-
-Diverse object assets from household items to industrial parts
-:::
-
-::::
-
----
-
-## Dataset Statistics
-
-| Category | Count | Description |
-|----------|-------|-------------|
-| **Tasks** | 200+ | Manipulation, locomotion, navigation |
-| **Robots** | 50+ | Arms, mobile bases, humanoids, hands |
-| **Objects** | 1000+ | Household, industrial, articulated |
-| **Scenes** | 50+ | Tables, shelves, kitchens, factories |
-| **Demonstrations** | 100K+ | Expert trajectories for IL training |
+This section documents the RoboVerse task suite, asset library, and evaluation protocols.
 
 ---
 

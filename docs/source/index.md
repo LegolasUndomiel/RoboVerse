@@ -16,12 +16,7 @@
 
 ## What is RoboVerse?
 
-**RoboVerse** is a unified platform for scalable and generalizable robot learning, providing:
-
-- **Multi-Simulator Support**: A unified interface across 11 simulators including MuJoCo, Isaac Sim, SAPIEN, PyBullet, Genesis, and more
-- **Large-Scale Dataset**: 200+ manipulation and locomotion tasks with diverse robots and objects  
-- **Cross-Embodiment**: Seamlessly transfer skills across 50+ robot embodiments
-- **Learning Algorithms**: Integrated imitation learning (ACT, Diffusion Policy, OpenVLA) and reinforcement learning (PPO, TD3, SAC)
+**RoboVerse** is a unified platform for scalable and generalizable robot learning. See the [project page](https://roboverseorg.github.io) and [paper](https://arxiv.org/abs/2504.18904) for more details.
 
 ---
 
@@ -80,7 +75,7 @@ Core simulation framework documentation including installation, tutorials, conce
 :link: dataset_benchmark/index
 :link-type: doc
 
-Explore 200+ tasks, robot configurations, object assets, and benchmark results.
+Explore tasks, robot configurations, object assets, and benchmark results.
 :::
 
 :::{grid-item-card} RoboVerse Learn
@@ -98,40 +93,6 @@ Complete API documentation for MetaSim modules.
 :::
 
 ::::
-
----
-
-## Key Features
-
-### Cross-Simulator Compatibility
-
-Write once, run anywhere. RoboVerse provides a unified API that works across multiple physics simulators:
-
-| Simulator | GPU Parallel | Rendering | Status |
-|-----------|--------------|-----------|--------|
-| MuJoCo | Via MJX | Native | Stable |
-| Isaac Sim | Native | RTX | Stable |
-| SAPIEN 3 | Native | Ray Tracing | Stable |
-| PyBullet | - | OpenGL | Stable |
-| Genesis | Native | Native | Beta |
-
-### Cross-Embodiment Transfer
-
-Train policies that generalize across different robot embodiments:
-
-- **Manipulators**: Franka Panda, UR5/UR10, Kinova, xArm, and more
-- **Mobile Robots**: Fetch, Tiago, Stretch
-- **Humanoids**: H1, G1, GR1
-- **Dexterous Hands**: Allegro, Shadow, LEAP
-
-### Domain Randomization
-
-Built-in support for comprehensive domain randomization:
-
-- Physics parameters (mass, friction, damping)
-- Visual properties (textures, lighting, colors)
-- Sensor noise and latency
-- Object poses and configurations
 
 ---
 
