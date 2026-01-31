@@ -193,7 +193,6 @@ os.makedirs("get_started/output", exist_ok=True)
 obs_saver = ObsSaver(video_path=f"get_started/output/4_motion_planning_{args.sim}.mp4")
 obs_saver.add(obs)
 
-step = 0
 robot_joint_limits = scenario.robots[0].joint_limits
 for step in range(200):
     log.debug(f"Step {step}")

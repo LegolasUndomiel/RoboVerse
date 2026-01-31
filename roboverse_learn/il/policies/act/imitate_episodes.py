@@ -282,8 +282,8 @@ def eval_bc(config, ckpt_name, save_episode=True):
             move_grippers([env.puppet_bot_left, env.puppet_bot_right], [PUPPET_GRIPPER_JOINT_OPEN] * 2, move_time=0.5)  # open
             pass
 
-        rewards = np.array(rewards)
-        episode_return = np.sum(rewards[rewards!=None])
+        rewards = np.array([r for r in rewards if r is not None])
+        episode_return = np.sum(rewards)
         episode_returns.append(episode_return)
         episode_highest_reward = np.max(rewards)
         highest_rewards.append(episode_highest_reward)

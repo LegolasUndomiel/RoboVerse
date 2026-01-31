@@ -1,4 +1,3 @@
-import unittest
 from typing import Dict, Union
 
 import numpy as np
@@ -64,10 +63,8 @@ class LinearNormalizer(DictOfTensorMixin):
                 params = self.params_dict[key]
                 try:
                     result[key] = _normalize(value, params, forward=forward)
-                except:
-                    import pdb
-
-                    pdb.set_trace()
+                except Exception as e:
+                    raise RuntimeError(f"Failed to normalize key '{key}': {e}") from e
             return result
         else:
             if "_default" not in self.params_dict:
