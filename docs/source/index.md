@@ -1,8 +1,6 @@
 # RoboVerse
 
-<p align="center">
-  <img src="./metasim/images/tea.jpg" alt="RoboVerse" style="max-width:100%; height:auto;" />
-</p>
+![RoboVerse](./metasim/images/tea.jpg)
 
 <p align="center">
   <a href="https://roboverseorg.github.io"><img src="https://img.shields.io/badge/project-page-brightgreen" alt="Project Page"></a>
