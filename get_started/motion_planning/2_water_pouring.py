@@ -20,19 +20,10 @@ import torch
 import tyro
 from loguru import logger as log
 from rich.logging import RichHandler
-
-rootutils.setup_root(__file__, pythonpath=True)
-log.configure(handlers=[{"sink": RichHandler(), "format": "{message}"}])
-
-import rootutils
-from loguru import logger as log
-from rich.logging import RichHandler
-
-from metasim.utils.obs_utils import convert_to_ply
-
-rootutils.setup_root(__file__, pythonpath=True)
-log.configure(handlers=[{"sink": RichHandler(), "format": "{message}"}])
 from scipy.spatial.transform import Rotation as R
+
+rootutils.setup_root(__file__, pythonpath=True)
+log.configure(handlers=[{"sink": RichHandler(), "format": "{message}"}])
 
 from metasim.constants import PhysicStateType
 from metasim.scenario.cameras import PinholeCameraCfg
@@ -43,7 +34,7 @@ from metasim.utils import configclass
 # from get_started.motion_planning.util_gsnet import GSNet
 from metasim.utils.camera_util import get_cam_params
 from metasim.utils.ik_solver import setup_ik_solver
-from metasim.utils.obs_utils import ObsSaver, get_pcd_from_rgbd
+from metasim.utils.obs_utils import ObsSaver, convert_to_ply, get_pcd_from_rgbd
 from metasim.utils.setup_util import get_handler
 
 

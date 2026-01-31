@@ -1,10 +1,6 @@
 from __future__ import annotations
 
 import logging
-
-import rootutils
-
-rootutils.setup_root(__file__, pythonpath=True)
 import time
 from collections import deque
 from copy import deepcopy
