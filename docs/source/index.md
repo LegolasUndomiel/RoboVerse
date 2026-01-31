@@ -1,7 +1,8 @@
 # RoboVerse
-![RoboVerse](./metasim/images/tea.jpg)
 
-
+<p align="center">
+  <img src="./metasim/images/tea.jpg" alt="RoboVerse" style="max-width:100%; height:auto;" />
+</p>
 
 <p align="center">
   <a href="https://roboverseorg.github.io"><img src="https://img.shields.io/badge/project-page-brightgreen" alt="Project Page"></a>
@@ -13,45 +14,157 @@
   <a href="docs/source/_static/wechat.jpg"><img src="https://img.shields.io/badge/wechat-QR_code-green" alt="WeChat"></a>
 </p>
 
-## Interactive System Diagram
+---
+
+## What is RoboVerse?
+
+**RoboVerse** is a unified platform for scalable and generalizable robot learning, providing:
+
+- **Multi-Simulator Support**: A unified interface across 11 simulators including MuJoCo, Isaac Sim, SAPIEN, PyBullet, Genesis, and more
+- **Large-Scale Dataset**: 200+ manipulation and locomotion tasks with diverse robots and objects  
+- **Cross-Embodiment**: Seamlessly transfer skills across 50+ robot embodiments
+- **Learning Algorithms**: Integrated imitation learning (ACT, Diffusion Policy, OpenVLA) and reinforcement learning (PPO, TD3, SAC)
+
+---
+
+## Quick Start
+
+Get started with RoboVerse in minutes:
+
+::::{grid} 2
+:gutter: 3
+
+:::{grid-item-card} Installation
+:link: metasim/get_started/installation
+:link-type: doc
+
+Set up RoboVerse with pip or Docker
+:::
+
+:::{grid-item-card} First Simulation
+:link: metasim/get_started/quick_start/0_static_scene
+:link-type: doc
+
+Create your first robotic simulation
+:::
+
+:::{grid-item-card} Control a Robot
+:link: metasim/get_started/quick_start/1_control_robot
+:link-type: doc
+
+Learn to control robots with actions
+:::
+
+:::{grid-item-card} Train a Policy
+:link: metasim/get_started/advanced/rl_example/quick_examples
+:link-type: doc
+
+Train RL/IL policies on tasks
+:::
+
+::::
+
+---
+
+## Documentation Overview
+
+::::{grid} 2
+:gutter: 3
+
+:::{grid-item-card} MetaSim User Guide
+:link: metasim/index
+:link-type: doc
+
+Core simulation framework documentation including installation, tutorials, concepts, and development guides.
+:::
+
+:::{grid-item-card} Dataset & Benchmark
+:link: dataset_benchmark/index
+:link-type: doc
+
+Explore 200+ tasks, robot configurations, object assets, and benchmark results.
+:::
+
+:::{grid-item-card} RoboVerse Learn
+:link: roboverse_learn/index
+:link-type: doc
+
+Learning algorithms: Imitation Learning (ACT, Diffusion Policy, VLA) and Reinforcement Learning (PPO, TD3, SAC).
+:::
+
+:::{grid-item-card} API Reference
+:link: API/index
+:link-type: doc
+
+Complete API documentation for MetaSim modules.
+:::
+
+::::
+
+---
+
+## Key Features
+
+### Cross-Simulator Compatibility
+
+Write once, run anywhere. RoboVerse provides a unified API that works across multiple physics simulators:
+
+| Simulator | GPU Parallel | Rendering | Status |
+|-----------|--------------|-----------|--------|
+| MuJoCo | Via MJX | Native | Stable |
+| Isaac Sim | Native | RTX | Stable |
+| SAPIEN 3 | Native | Ray Tracing | Stable |
+| PyBullet | - | OpenGL | Stable |
+| Genesis | Native | Native | Beta |
+
+### Cross-Embodiment Transfer
+
+Train policies that generalize across different robot embodiments:
+
+- **Manipulators**: Franka Panda, UR5/UR10, Kinova, xArm, and more
+- **Mobile Robots**: Fetch, Tiago, Stretch
+- **Humanoids**: H1, G1, GR1
+- **Dexterous Hands**: Allegro, Shadow, LEAP
+
+### Domain Randomization
+
+Built-in support for comprehensive domain randomization:
+
+- Physics parameters (mass, friction, damping)
+- Visual properties (textures, lighting, colors)
+- Sensor noise and latency
+- Object poses and configurations
+
+---
+
+## System Architecture
+
 <p align="center">
   <img src="_static/Robo.png"
-       usemap="#metasim-map"
-       class="map-responsive"
+       alt="RoboVerse System Architecture"
        style="max-width:100%; height:auto;" />
-  <map name="metasim-map">
-    <area shape="rect"
-          coords="2836,492,3309,632"
-          href="metasim/user_guide/cross_sim.html"
-          alt="Cross-Sim Guide"
-          style="cursor: pointer;" />
-    <area shape="rect"
-        coords="2830,929,3313,1081"
-        href="metasim/user_guide/cross_embodiment.html"
-        alt="Cross Embodiment"
-        style="cursor: pointer;" />
-    <area shape="rect"
-        coords="771,876,367,773"
-        href="metasim/user_guide/real2sim.html"
-        alt="Real2Sim"
-        style="cursor: pointer;" />
-    <area shape="rect"
-        coords="780,1241,365,1139"
-        href="metasim/user_guide/teleoperate_demo.html"
-        alt="Real2Sim"
-        style="cursor: pointer;" />
-  </map>
 </p>
 
-<script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
-<script>
-  window.onload = function () {
-    imageMapResize();
-  };
-</script>
+The RoboVerse ecosystem consists of three main components:
 
+- **MetaSim**: Core simulation framework with unified API across simulators
+- **RoboVerse Pack**: Pre-configured robots, tasks, and scene assets
+- **RoboVerse Learn**: Integrated learning algorithms (IL & RL)
 
-## Acknowledgement
+Learn more about the architecture in the [Architecture Overview](metasim/concept/architecture.md).
+
+---
+
+## Community & Support
+
+- **GitHub Issues**: [Report bugs or request features](https://github.com/RoboVerseOrg/RoboVerse/issues)
+- **GitHub Discussions**: [Ask questions and share ideas](https://github.com/RoboVerseOrg/RoboVerse/discussions)
+- **Discord**: [Join our community](https://discord.gg/6e2CPVnAD3)
+
+---
+
+## Citation
+
 If you find this work useful in your research, please consider citing:
 
 ```bibtex
